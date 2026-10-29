@@ -1,0 +1,70 @@
+/* Theme colors stay separate from quiz state and scoring. */
+.theme-control{display:flex;align-items:center;gap:7px;color:var(--muted);font-size:12px;white-space:nowrap}
+.theme-control svg{width:16px;height:16px}
+.theme-control select{color:var(--ink);background:#f7f9fc;border:1px solid var(--line);border-radius:7px;padding:7px 9px;min-height:36px;max-width:122px;font-size:12px;cursor:pointer}
+.theme-control select:focus-visible{outline:3px solid #55bcb7;outline-offset:2px}
+html[data-theme=light]{color-scheme:light}
+html[data-theme=dark]{color-scheme:dark;--canvas:#111923;--ink:#dce4ed;--muted:#a4b3c5;--line:#344357;--blue:#93b4ff;--teal:#80d2c3;--red:#f299a0;--green:#81cfb6;--amber:#e0bd77;--white:#192432}
+html[data-theme=dark] body{background:var(--canvas);color:var(--ink)}
+html[data-theme=dark] .topbar,html[data-theme=dark] .overview,html[data-theme=dark] .panel,html[data-theme=dark] .btn,html[data-theme=dark] .module-row,html[data-theme=dark] .option,html[data-theme=dark] .q-num,html[data-theme=dark] .question-preview,html[data-theme=dark] .empty,html[data-theme=dark] .result-details,html[data-theme=dark] dialog,html[data-theme=dark] .skip-link{background:#192432}
+html[data-theme=dark] .sidebar{background:#0e1b2b}
+html[data-theme=dark] .brand-mark{background:#213c50}
+html[data-theme=dark] .nav button.active{background:#2b425e}
+html[data-theme=dark] .nav button:hover{background:#233a54}
+html[data-theme=dark] .intro-stat b,html[data-theme=dark] .session-time b{color:#dce4ed}
+html[data-theme=dark] .session-time.urgent b{color:var(--red)}
+html[data-theme=dark] .save-pill,html[data-theme=dark] .theme-control select,html[data-theme=dark] .rules,html[data-theme=dark] .data-table th{background:#202d3e}
+html[data-theme=dark] .theme-control select{color:#dce4ed}
+html[data-theme=dark] .field input,html[data-theme=dark] .field select,html[data-theme=dark] .search-input{background:#14202e;border-color:#40516a;color:#dce4ed}
+html[data-theme=dark] .field label,html[data-theme=dark] .field-label,html[data-theme=dark] .help p,html[data-theme=dark] .help li{color:#bac7d7}
+html[data-theme=dark] input::placeholder{color:#96a7bd;opacity:1}
+html[data-theme=dark] .btn:hover,html[data-theme=dark] .module-row:hover,html[data-theme=dark] .option:hover:not(:disabled){background:#24364a;border-color:#587293}
+html[data-theme=dark] .btn.primary{background:#385fa8;border-color:#7696ce;color:#f4f7fd;box-shadow:none}
+html[data-theme=dark] .btn.primary:hover{background:#426ab4}
+html[data-theme=dark] .btn.teal{background:#246b65;border-color:#5aa79d;color:#f0f8f7}
+html[data-theme=dark] .btn.danger{color:#f0a7ae;border-color:#8b5965}
+html[data-theme=dark] .btn.ghost{background:transparent}
+html[data-theme=dark] .btn[aria-pressed=true]{background:#203e3d;border-color:#5f9e95;color:#a1dfd3}
+html[data-theme=dark] .chain-node i{background:#172b38;border-color:#49667b}
+html[data-theme=dark] .chain-node:hover i{background:#26403e}
+html[data-theme=dark] .chain-node:not(:last-child):after{border-color:#40566f}
+html[data-theme=dark] .metric .metric-icon,html[data-theme=dark] .empty-symbol{background:#263b55;color:#b1c9ff}
+html[data-theme=dark] .module-row{border-bottom-color:#2a3a4d}
+html[data-theme=dark] .module-dot{background:#6a839b}
+html[data-theme=dark] .notice{background:#1e354e;border-color:#43638a}
+html[data-theme=dark] .notice.warning{background:#362e20;border-color:#79633e;color:#e4c28a}
+html[data-theme=dark] .badge{background:#243953;border-color:#45638b;color:#bad0f4}
+html[data-theme=dark] .badge.neutral{background:#293343;border-color:#43526a;color:#b9c5d5}
+html[data-theme=dark] .badge.extra{background:#3a3021;border-color:#76613d;color:#e0c48a}
+html[data-theme=dark] .option,html[data-theme=dark] .option-key,html[data-theme=dark] .q-num{border-color:#42546d}
+html[data-theme=dark] .option.selected{background:#233b5d;border-color:#89aaf0}
+html[data-theme=dark] .option.selected .option-key{background:#4169b2;border-color:#89aaf0;color:#fff}
+html[data-theme=dark] .option.correct{background:#1b3a33;border-color:#5da590}
+html[data-theme=dark] .option.correct .option-key{background:#7ac4ab;border-color:#8fd2bb;color:#10271f}
+html[data-theme=dark] .option.wrong{background:#402932;border-color:#b36e7c}
+html[data-theme=dark] .option.wrong .option-key{background:#d69aa6;border-color:#dba5af;color:#2d1820}
+html[data-theme=dark] .analysis{background:#172c3b;border-color:#3b566d}
+html[data-theme=dark] .source-line{border-top-color:#3b536c}
+html[data-theme=dark] .progress-track{background:#2c3e54}
+html[data-theme=dark] .q-num.answered,html[data-theme=dark] .legend i{background:#284567;border-color:#6b8bb9;color:#c4d8fa}
+html[data-theme=dark] .q-num.right{background:#22473b;border-color:#69aa92;color:#b8e9d5}
+html[data-theme=dark] .q-num.wrong{background:#4a2d37;border-color:#ad7282;color:#f1bdc7}
+html[data-theme=dark] .legend i.empty{background:#192432;border-color:#6b7e96}
+html[data-theme=dark] .legend i.mark{background:#d2ab5d;border-color:#d2ab5d}
+html[data-theme=dark] .result-hero{background:#13293d;border:1px solid #38536b}
+html[data-theme=dark] dialog{color:#dce4ed;box-shadow:0 20px 80px #0006}
+html[data-theme=dark] dialog::backdrop{background:#050c15b3}
+html[data-theme=dark] .toast{background:#d5e4ed;color:#142432}
+html[data-theme=dark] .footer{color:#a0aec0}
+html[data-theme=dark] ::selection{background:#3c597e;color:#f0f4fa}
+@media(min-width:661px) and (max-width:1100px){.top-meta .save-pill,.top-meta .version{display:none}.top-meta{gap:0}.topbar{gap:10px}}
+@media(max-width:660px){
+  .topbar{min-height:58px;height:auto;flex-wrap:wrap;padding:10px 17px;row-gap:8px}
+  .top-meta{margin-left:auto;gap:8px}.top-meta .save-pill{display:none}
+  .theme-control{gap:5px}.theme-control select{min-height:40px;font-size:14px;padding:6px 8px;max-width:126px}
+  .field input,.field select,.search-input{font-size:16px;min-height:44px}
+  .nav button{min-height:40px}.question-actions .btn{min-height:44px}.palette-grid{gap:9px;grid-template-columns:repeat(auto-fit,minmax(44px,1fr))}.q-num{height:44px}
+  .option-text,.preview-stem,.question-stem,.summary-stem{min-width:0;overflow-wrap:anywhere}
+  .field,.form-grid,.quota-grid,.exam-settings{min-width:0}
+}
+@media(max-width:360px){.breadcrumb{font-size:10px}.theme-control select{max-width:108px;font-size:12px}.theme-control svg{display:none}.form-grid{grid-template-columns:1fr}.quota-grid{gap:8px}.question-panel{padding:18px 14px}}
